@@ -1,0 +1,129 @@
+object Form1: TForm1
+  Left = 67
+  Height = 400
+  Top = 261
+  Width = 892
+  Caption = 'Autostrada'
+  ClientHeight = 400
+  ClientWidth = 892
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  LCLVersion = '1.4.2.0'
+  object Image1: TImage
+    Left = 0
+    Height = 400
+    Top = 0
+    Width = 600
+  end
+  object Label1: TLabel
+    Left = 608
+    Height = 21
+    Top = 48
+    Width = 146
+    Caption = 'Pocet jazdnych pruhov'
+    ParentColor = False
+    OnClick = Label1Click
+  end
+  object Edit1: TEdit
+    Left = 784
+    Height = 33
+    Top = 48
+    Width = 80
+    TabOrder = 0
+    Text = '30'
+  end
+  object Label2: TLabel
+    Left = 608
+    Height = 21
+    Top = 96
+    Width = 165
+    Caption = 'Vzdialenost medzi pruhmi'
+    ParentColor = False
+    OnClick = Label1Click
+  end
+  object Edit2: TEdit
+    Left = 784
+    Height = 33
+    Top = 96
+    Width = 80
+    TabOrder = 1
+    Text = '10'
+  end
+  object Label3: TLabel
+    Left = 608
+    Height = 21
+    Top = 144
+    Width = 71
+    Caption = 'Krok hraca '
+    ParentColor = False
+    OnClick = Label1Click
+  end
+  object Edit3: TEdit
+    Left = 784
+    Height = 33
+    Top = 144
+    Width = 80
+    TabOrder = 2
+    Text = '5'
+  end
+  object Button1: TButton
+    Left = 680
+    Height = 28
+    Top = 8
+    Width = 142
+    Caption = 'Nova hra'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object Button2: TButton
+    Left = 680
+    Height = 25
+    Top = 208
+    Width = 142
+    Caption = 'Nacitat nastavenia'
+    OnClick = Button2Click
+    TabOrder = 4
+  end
+  object Button3: TButton
+    Left = 680
+    Height = 25
+    Top = 248
+    Width = 142
+    Caption = 'Ulozit nastavenia'
+    OnClick = Button3Click
+    TabOrder = 5
+  end
+  object ScrollBar1: TScrollBar
+    Left = 680
+    Height = 13
+    Top = 312
+    Width = 121
+    Max = 10
+    Min = 1
+    PageSize = 0
+    Position = 1
+    TabOrder = 6
+  end
+  object Label4: TLabel
+    Left = 608
+    Height = 21
+    Top = 304
+    Width = 41
+    Caption = 'Speed'
+    ParentColor = False
+  end
+  object Timer1: TTimer
+    Interval = 50
+    OnTimer = Timer1Timer
+    left = 622
+    top = 361
+  end
+  object OpenDialog1: TOpenDialog
+    left = 680
+    top = 361
+  end
+  object SaveDialog1: TSaveDialog
+    left = 732
+    top = 361
+  end
+end
